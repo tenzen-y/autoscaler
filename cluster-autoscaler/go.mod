@@ -21,8 +21,6 @@ require (
 	github.com/google/uuid v1.3.0
 	github.com/jmespath/go-jmespath v0.4.0
 	github.com/json-iterator/go v1.1.12
-	github.com/onsi/ginkgo/v2 v2.13.0
-	github.com/onsi/gomega v1.29.0
 	github.com/pkg/errors v0.9.1
 	github.com/prometheus/client_golang v1.16.0
 	github.com/satori/go.uuid v1.2.0
@@ -31,7 +29,7 @@ require (
 	golang.org/x/crypto v0.14.0
 	golang.org/x/net v0.17.0
 	golang.org/x/oauth2 v0.10.0
-	golang.org/x/sys v0.13.0
+	golang.org/x/sys v0.14.0
 	google.golang.org/api v0.126.0
 	google.golang.org/grpc v1.58.3
 	google.golang.org/protobuf v1.31.0
@@ -40,10 +38,10 @@ require (
 	k8s.io/api v0.29.0-alpha.3
 	k8s.io/apimachinery v0.29.0-alpha.3
 	k8s.io/apiserver v0.29.0-alpha.3
+	k8s.io/autoscaler/cluster-autoscaler/provisioningrequest/apis v0.0.0-00010101000000-000000000000
 	k8s.io/client-go v0.29.0-alpha.3
 	k8s.io/cloud-provider v0.29.0-alpha.3
 	k8s.io/cloud-provider-aws v1.27.0
-	k8s.io/code-generator v0.29.0-alpha.3
 	k8s.io/component-base v0.29.0-alpha.3
 	k8s.io/component-helpers v0.29.0-alpha.3
 	k8s.io/klog/v2 v2.110.1
@@ -133,6 +131,8 @@ require (
 	github.com/mrunalp/fileutils v0.5.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f // indirect
+	github.com/onsi/ginkgo/v2 v2.13.0 // indirect
+	github.com/onsi/gomega v1.29.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/runc v1.1.9 // indirect
 	github.com/opencontainers/runtime-spec v1.0.3-0.20220909204839-494a5a6aca78 // indirect
@@ -169,12 +169,12 @@ require (
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.24.0 // indirect
 	golang.org/x/exp v0.0.0-20230321023759-10a507213a29 // indirect
-	golang.org/x/mod v0.12.0 // indirect
-	golang.org/x/sync v0.3.0 // indirect
+	golang.org/x/mod v0.13.0 // indirect
+	golang.org/x/sync v0.4.0 // indirect
 	golang.org/x/term v0.13.0 // indirect
 	golang.org/x/text v0.13.0 // indirect
 	golang.org/x/time v0.3.0 // indirect
-	golang.org/x/tools v0.12.0 // indirect
+	golang.org/x/tools v0.14.0 // indirect
 	google.golang.org/appengine v1.6.7 // indirect
 	google.golang.org/genproto v0.0.0-20230803162519-f966b187b2e5 // indirect
 	google.golang.org/genproto/googleapis/api v0.0.0-20230726155614-23370e0ffb3e // indirect
@@ -184,6 +184,7 @@ require (
 	gopkg.in/warnings.v0 v0.1.2 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 	k8s.io/apiextensions-apiserver v0.0.0 // indirect
+	k8s.io/code-generator v0.29.0-alpha.3 // indirect
 	k8s.io/controller-manager v0.29.0-alpha.3 // indirect
 	k8s.io/cri-api v0.29.0-alpha.3 // indirect
 	k8s.io/csi-translation-lib v0.27.0 // indirect
@@ -263,3 +264,5 @@ replace k8s.io/dynamic-resource-allocation => k8s.io/dynamic-resource-allocation
 replace k8s.io/kms => k8s.io/kms v0.29.0-alpha.3
 
 replace k8s.io/endpointslice => k8s.io/endpointslice v0.29.0-alpha.3
+
+replace k8s.io/autoscaler/cluster-autoscaler/provisioningrequest/apis => ./provisioningrequest/apis
