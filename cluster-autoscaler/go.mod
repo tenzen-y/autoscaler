@@ -1,6 +1,6 @@
 module k8s.io/autoscaler/cluster-autoscaler
 
-go 1.21
+go 1.21.4
 
 require (
 	cloud.google.com/go/compute/metadata v0.2.3
@@ -38,7 +38,7 @@ require (
 	k8s.io/api v0.29.0-alpha.3
 	k8s.io/apimachinery v0.29.0-alpha.3
 	k8s.io/apiserver v0.29.0-alpha.3
-	k8s.io/autoscaler/cluster-autoscaler/provisioningrequest/apis v0.0.0-00010101000000-000000000000
+	k8s.io/autoscaler/cluster-autoscaler/apis v0.0.0-00010101000000-000000000000
 	k8s.io/client-go v0.29.0-alpha.3
 	k8s.io/cloud-provider v0.29.0-alpha.3
 	k8s.io/cloud-provider-aws v1.27.0
@@ -50,7 +50,6 @@ require (
 	k8s.io/legacy-cloud-providers v0.0.0
 	k8s.io/utils v0.0.0-20230726121419-3b25d923346b
 	sigs.k8s.io/cloud-provider-azure v1.28.0
-	sigs.k8s.io/structured-merge-diff/v4 v4.4.1
 	sigs.k8s.io/yaml v1.3.0
 )
 
@@ -131,8 +130,8 @@ require (
 	github.com/mrunalp/fileutils v0.5.0 // indirect
 	github.com/munnerz/goautoneg v0.0.0-20191010083416-a7dc8b61c822 // indirect
 	github.com/mxk/go-flowrate v0.0.0-20140419014527-cca7078d478f // indirect
-	github.com/onsi/ginkgo/v2 v2.13.0 // indirect
-	github.com/onsi/gomega v1.29.0 // indirect
+	github.com/onsi/ginkgo/v2 v2.13.2 // indirect
+	github.com/onsi/gomega v1.30.0 // indirect
 	github.com/opencontainers/go-digest v1.0.0 // indirect
 	github.com/opencontainers/runc v1.1.9 // indirect
 	github.com/opencontainers/runtime-spec v1.0.3-0.20220909204839-494a5a6aca78 // indirect
@@ -197,6 +196,7 @@ require (
 	k8s.io/mount-utils v0.26.0-alpha.0 // indirect
 	sigs.k8s.io/apiserver-network-proxy/konnectivity-client v0.28.0 // indirect
 	sigs.k8s.io/json v0.0.0-20221116044647-bc3834ca7abd // indirect
+	sigs.k8s.io/structured-merge-diff/v4 v4.4.1 // indirect
 )
 
 replace github.com/aws/aws-sdk-go/service/eks => github.com/aws/aws-sdk-go/service/eks v1.38.49
@@ -265,4 +265,4 @@ replace k8s.io/kms => k8s.io/kms v0.29.0-alpha.3
 
 replace k8s.io/endpointslice => k8s.io/endpointslice v0.29.0-alpha.3
 
-replace k8s.io/autoscaler/cluster-autoscaler/provisioningrequest/apis => ./provisioningrequest/apis
+replace k8s.io/autoscaler/cluster-autoscaler/apis => ./apis
